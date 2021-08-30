@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -- "${1:-$(</dev/stdin)}" "${@:2}"
-BASE="docker.sparta.corp.magento.com:5000/m2"
-
+#BASE="docker.sparta.corp.magento.com:5000/m2"
+BASE="docker-spartarepo-registry.dr.corp.adobe.com/m2"
 for tag in $@
 do
     echo -e "$tag"
